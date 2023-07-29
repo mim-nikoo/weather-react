@@ -19,7 +19,10 @@ export default function WeatherInfo(props) {
       <div className="row">
         <div className="col-6">
           <div className="d-flex weather-temperature">
-            <img src="http://openweathermap.org/img/w/01d.png" alt="Clear" />
+            <img
+              src={`http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.data.icon}.png`}
+              alt={props.data.description}
+            />
             <div>
               <strong>{Math.round(props.data.temperature)}</strong>
               <span className="units">
