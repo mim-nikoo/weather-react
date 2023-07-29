@@ -67,7 +67,7 @@ export default function Weather(props) {
             rel="noreferrer"
           >
             Open-source code
-          </a>
+          </a>{" "}
           by Maryam Nikoomanesh
         </small>
       </div>
