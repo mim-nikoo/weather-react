@@ -1,10 +1,10 @@
 .WeatherForecast {
   text-align: center;
 }
-
-.WeatherForecast-temperature-min {
+.WeatherForecast-day,
+.WeatherForecasr-temperature-min,
+.WeatherForecasr-temperature-max {
   opacity: 0.6;
-  margin-left: 5px;
 }
 
 .WeatherForecast-icon img {
