@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
-
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -59,17 +59,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-
-        <small>
-          <a
-            href="https://github.com/mim-nikoo/weather-react"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open-source code
-          </a>{" "}
-          by Maryam Nikoomanesh
-        </small>
+        <WeatherForecast city={weatherData.city} />
       </div>
     );
   } else {
